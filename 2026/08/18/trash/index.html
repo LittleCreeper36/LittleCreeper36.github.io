@@ -1,0 +1,308 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>乱七八糟的东西 | LC的博客</title><meta name="author" content="Little_Creeper"><meta name="copyright" content="Little_Creeper"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="此文章已加密，需要输入密码才能查看。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="乱七八糟的东西">
+<meta property="og:url" content="https://littlecreeper36.github.io/2026/08/18/trash/index.html">
+<meta property="og:site_name" content="LC的博客">
+<meta property="og:description" content="此文章已加密，需要输入密码才能查看。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cloudflare-imgbed-3j9.pages.dev/file/1787069083050_9EA69955-C20A-4CB2-9D43-BA53B946183D.jpeg">
+<meta property="article:published_time" content="2026-08-18T13:59:57.000Z">
+<meta property="article:modified_time" content="2026-08-18T16:49:26.914Z">
+<meta property="article:author" content="Little_Creeper">
+<meta property="article:tag" content="秘密">
+<meta property="article:tag" content="归档">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cloudflare-imgbed-3j9.pages.dev/file/1787069083050_9EA69955-C20A-4CB2-9D43-BA53B946183D.jpeg"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "乱七八糟的东西",
+  "url": "https://littlecreeper36.github.io/2026/08/18/trash/",
+  "image": "https://cloudflare-imgbed-3j9.pages.dev/file/1787069083050_9EA69955-C20A-4CB2-9D43-BA53B946183D.jpeg",
+  "datePublished": "2026-08-18T13:59:57.000Z",
+  "dateModified": "2026-08-18T16:49:26.914Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Little_Creeper",
+      "url": "https://littlecreeper36.github.io"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/lc-icon.jpg"><link rel="canonical" href="https://littlecreeper36.github.io/2026/08/18/trash/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.6.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.3.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1.14/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        const data = { value }
+
+        if (ttl != null) {
+          data.expiry = Date.now() + ttl * 86400000
+        }
+
+        localStorage.setItem(key, JSON.stringify(data))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return
+
+        try {
+          const data = JSON.parse(itemStr)
+
+          if (data.expiry && Date.now() > data.expiry) {
+            localStorage.removeItem(key)
+            return
+          }
+
+          return data.value
+        } catch {
+          localStorage.removeItem(key)
+        }
+      }
+    }
+
+    const scriptCache = new Map()
+    const cssCache = new Map()
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => {
+        if (scriptCache.has(url)) {
+          return scriptCache.get(url)
+        }
+
+        const promise = new Promise((resolve, reject) => {
+          const script = document.createElement('script')
+
+          script.src = url
+          script.async = true
+
+          for (const key in attr) {
+            script.setAttribute(key, attr[key])
+          }
+
+          script.onload = resolve
+          script.onerror = reject
+
+          document.head.appendChild(script)
+        })
+
+        scriptCache.set(url, promise)
+
+        return promise
+      },
+      getCSS: (url, id) => {
+        if (cssCache.has(url)) {
+          return cssCache.get(url)
+        }
+
+        const promise = new Promise((resolve, reject) => {
+          const link = document.createElement('link')
+
+          link.rel = 'stylesheet'
+          link.href = url
+
+          if (id) {
+            link.id = id
+          }
+
+          link.onload = resolve
+          link.onerror = reject
+
+          document.head.appendChild(link)
+        })
+
+        cssCache.set(url, promise)
+
+        return promise
+      },
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!true && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const metaThemeColor = document.querySelector('meta[name="theme-color"]')
+      const activateDarkMode = () => {
+        document.documentElement.dataset.theme = 'dark'
+        if (metaThemeColor !== null) {
+          metaThemeColor.setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.dataset.theme = 'light'
+        if (metaThemeColor !== null) {
+          metaThemeColor.setAttribute('content', 'ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"已切换为繁体中文","cht_to_chs":"已切换为简体中文","day_to_night":"已切换为深色模式","night_to_day":"已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '乱七八糟的东西',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><script src="https://cdn.jsdelivr.net/npm/dplayer@1.27.1/dist/DPlayer.min.js"></script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/lc-icon.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">3</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/shuoshuo/"><i class="fa-fw fas fa-comment-dots"></i><span> 说说</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://cloudflare-imgbed-3j9.pages.dev/file/1787069083050_9EA69955-C20A-4CB2-9D43-BA53B946183D.jpeg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">LC的博客</span></a><a class="nav-page-title" href="/"><span class="site-name">乱七八糟的东西</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/shuoshuo/"><i class="fa-fw fas fa-comment-dots"></i><span> 说说</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">乱七八糟的东西</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-08-18T13:59:57.000Z" title="发表于 2026-08-18 21:59:57">2026-08-18</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-08-18T16:49:26.914Z" title="更新于 2026-08-19 00:49:26">2026-08-19</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%BA%93%E5%AD%98/">库存</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><div class="hbe hbe-container" id="hexo-blog-encrypt"
+     data-hbe-format="4"
+     data-wpm="抱歉, 这个密码不太对, 请再试试。"
+     data-whm="抱歉, 这个密码不太对, 请再试试。"
+     data-salt="f4025219e11405f47eda71b0a76fe6420ba855ff8fb61ab7f8446e12f02f1e07"
+     data-nonce="1d6337c90de44570a84e0d6a"
+     data-kdf-iterations="250000"
+     data-auto-save="true">
+  <script id="hbeData" type="hbeData">
+    463af61cb99abda2cf55f8d4a96bcf05d1d10be17d27815878c6045385497c6231bdef4814b405171962595bbd4bc72d5557d771210a8e9cd393608f134cee9cfc72c331346c9d1ee1fe5e658edc4695e89ceb6b2c3e3049de80a889e7966f8f48adc98e28fab05ed4ed6aaab387415a1e5750a95fd74ff041055e388bd088eddff6037ee2221cc33c0991f9139e9d68516e2b80284d0255b0243a1295ee98b873fe064f3b914901d1b2cf8e974ba1efd6b1b17bf25ae93247647b0d3db9fc2f18f411c7d2ba8a4b2b627c0c15ab4712040070c84089cd4e16cb52ffb013454117ec0a13ba2bc3762405141c67645aab4c0661ce7b910094634c92c30f95e0791c4b1ab03aae60cd28dfaa32922ad612e001eecb6bfb83e281e90ccafa4f1ffa034b95bfb80c087d2c6349698e6c881ba09923ab2aa31369f76471953da216aeae2e5fa66c1e2ffd4b81318455595b86857525d7b0cb64dd68982e3c4ab9eeb94b48fb0f02cbf948e42e4ce5ffbe994a573849bbeef02628be74321b741e533a41b4b8e8237e876dc5a88445290a823436abd01374c34f063cc8664c35d8eca089fe32d6acd3c695f12247f83f8f294415f55b8f143e6b7a45aab2532757901a20466c2e7e976b2e99816f523cf33b18b12a2ffc3a01e39d28d703065e2b6079d98f5e5fc2e1cbda970ee2474db82191344e9decd4d4cacefa859221d744ee88b0bcfb810c83917d36f4cb0effa5a089c914a4c64cb36db34c32c4e9a65f6cfd9b9a610806056a850a067affcde86c874f82cc4146813c2dfc90d093a1ab1bf59c62be20190524d45f47119866aec07f257ba962db3bfd37abb4ff1162b6d31a088ad4767206cc9dc81c9686d3e5b0a73902dcfe8142daa6a4a2bb938ddf558711223b22c60ac36c9806f2e8c6df423ba427e62d65d5c9f6d5d0ff8f96b467a2c0d8f24604f6561762cc372e9314dfd3c48d0163ab27263958ff01f723c6c36f594c3c3a729ab5d08db6d957280b4e5c2df745e9f3708de66d23a58666bb9af35a73f926cc19e1bfdda3385f5d4ab00eee6ec0c9fbe8d1784578f916b7980276665fdd5e90fa1958c7afb92cbd97953bf2b6fe7c268fa415162745f83a261194b89c8dd9c325249ed37a416f44e2e11a1cd26c0a43b586e1ab6abbfa0dd87dbb3c89e9645c9534e25decc4f612c44e32ace5e2356ef48f9ace6f73f71f52086cf6fa95a91454c987642db8c329b30264ae4cd6d806b8e692e7ff00cd3b323ed1da0addf416464b9442a69b626ee04a30f49897c16abcbfca8b620add880d8db7eabc712923b0ca4cdb50d27e3d1a69821d45ea05b1dda4d596fd13bdf160d4e120021e56db524e428285c19cfe270e730d6ab1fbbe96bfb7b4356c7c92821b75f7f9cca6145b3d30e39ac270d327f58db81a3874e1731267dae538f8e59748f4d345012d323457b97201812bcccb8e419b82f0bb35249a2951f3b013412cd72252b46e31cdbe6dabbdaec1e2b78c2269f2e5b7b68a30b106e3bf0bfaacf855466eb7602e789df9f01122b32f8c4d2b60d5507a2ba9afb8a18e49de329b1702ac05119cecf0590ec221654118e7061bf2aafa0b823b165be7009fbed768cf39899912959c85190edd20582d6f706a790473f5a0992e7ac4d8a48daa78b8cc51f5dc66513555dea6ff5b686d790016f68e2d68fdb9831c75e25a7d74874fc2295b83966f95d6fa722ad7a9bd3351d9455e05c1924d79823179512c9c209f1a4697a6f736e0f94a162fe7a85609c19d54dfda396eb66b0147faf7f28e4c2144899f3ee4a874c28e22bb0cc99f8c23a8cf1b12f1da31bb0fb679b5ac92957b29d1a085caef39fb19650bc3cb475804f007b3e03912574d1fe5e30d1b53a43d3684424977f00a951802990311559b0385b4be3adf88c5798bef04103ddfa9478bb281e1465d6d1764ea15b1fe1ba8d96b57800c5fd9e1f0b49c1f698d5f1f48ee609bfb6a423e6ea66c78d117d70824039e441c5b3927b615dfbc0a17f32a08ec1f372d1a49c0f8a78e1c805d0e76f3dca4eb79f65f94f98ae88572e740b805bfc0bb70450eb511868acc94c47a53818aa5e833157f2b37b2bc9bc0a29cc0c1e9daf2137e27fa8200396b97c70314adab6aa829cd09d0d7cb7a1ee1ece0ff87f41a549ca863d7d00d2cc3a2fcd964b3f94e2942f4b16115633a5eadce3203b29ffeccbecd7c4f484f06c3180c6e8c510aaffc6ed0c56bd85c2ea53374e5b982c6bb72339f3b95151614eefd6b5d28e79f2fe081186b8084c23eadf9fda7d1274cf245d3200bd436650250c1ab85a0f91a4fdb189340383a6e2420e2e38e911aadd7e0b6a4cd34e2cbdcca1ffc61ff1146aba700a71da191f3e12b848335f2d97f6e40f04a1de2e96c97f13765df594839f9ae218a231fc9fb782cb62e7ec48dd89ef44a4730857db7a65fd972229f7f66e30208d63e62fc5311597b3e9ee356575ea3df343ea6442f8cca10511fa62bb1d43b3024d393eb153800eed905a71c7767c17ef60e6f65f9b73c28901a7603fbcfd986e4136e3172e6b31905e7a925da47c212e5d794add3fa7560fe19508910cd09d0882c7168deee76e720c4b731da28024a49e7700f5d50fe4220de54a6d9001bf519f38de1436af4991cd652313718e09ffbb33eda7e50c63c59309370f21e8f16c54cd08c64a4c3df35641ac343ba7262ec6ff39df910a8dc87ed3473901a9dcc8542661f37dca50e4273368c97e7af6aa94870f97805749321d3c58d6ec936792bb8c60b21ef14844395b9de652c774b1d4567262529b17f38b661a616863dcbe119e6647cd99ece82b498676cd4feaa250e681fea8edaef7cb416ab1c9cee8db184a42764baa7ad56706e769d9c81c300e7f60b5487edbbfce2ebf3dc382e22b3604e78a697414f5bb7b5e576600798f5e518a45cb8c77879ede4c074817385c62ba4f47a5a6ebe7bf1c7c0d716ddda8e249287d5ffb39d01a3315d1d27f0a224b6cda3447b1cc6e498b28aba807d066887b9a7222f316dc71a395cf9193adbc8818394b02f279ba4d2dcd822f24484fb8b78ba7e57d6c4488851d51e7a0e616f5dd7f7a2eeb38dc66494ed68baea941c69da53e2c4e9441d12b4bcbaa471a1d2b0920afd3d04ad5dc49a3a9de39f3ec36011e26786e6d39592af63e4cb3c600572a2528fb8f282a779d8e6d5fa816eb0df9367f94525544893ee40191865631461b0d5cb41d4c66adee1540c5f0f9a865f59a661e75ff20b0c5eeb1ca172fd2b3d205b9fa338e2a566a8bffd126ae1548b646c982de386abad1bd394a250d96b119e43cc83846f18a0c51826ae7285c103c458e8c82586ab44ce81c3fb20e458b9777c3def6311ac412d5c3cf7ff53598debbcc816d3f30c9d4dc99f0ee10ada44eba00cf4e356282350e139dba6f4dcb707d36db8143c5e06a58b3e181039ce226e4df810e1b16d0ab0050e8bc55a105d0cf4fb7c6e4775c70da8481f8ab3d6e17c94ba3aa6215db8d3c202ad59ee1bceaaff7d9cc0c72e484c0d742bf7498e9dbe1bd237f1dea4641c279417271c974e507efb4372b69c28a3d22a54b36e3c9a42f1689b7e17ecea46ce5649e580153d293e1e391e8121805c7e3c716050b1735a111b18260a8a91b29cbdd4ad25cf775690a19ec5b74c188d1f109a23ecef3293f3ae8d2ba1bacaa6455f2d140b4b1322346637f7f06e14c11e2d04e57823737944460c7ddd013dfd9eaf8402d577d16730a864e2285ff37153b3f17db04142af0b5c66fdd35170380b6a522ce4a8380baa95c9e0627d03170db58e563bc42d0ec4c76abd471ab46d4107340e5fbf1bd798a8f476b5cefefca92ad2cd2a3c0f671252e370e0d0b9f6e7f2862cd25a56f18ae8d3847f684f2b1352ac6f25e70dd7c504f73bb85d731ba31cb56ab757b43fec5020084c68ad0f7e43c6e24de5272d1abe6105cf63ba0efb49416dc659c9eda69b034a1b614bf66454c43c3e93bcdec3e992cfe788959b110ef46b965c6a7e54
+  </script>
+  <div class="hbe hbe-content">
+    <form id="hbeForm" class="hbe hbe-form" onsubmit="return false">
+      <div class="hbe hbe-input hbe-input-xray">
+      <input class="hbe hbe-input-field hbe-input-field-xray" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-xray" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-xray">您好, 这里需要密码。（提示：我的出生年份）</span>
+      </label>
+      <svg class="hbe hbe-graphic hbe-graphic-xray" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+        <path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"></path>
+      </svg>
+    </div>
+      <button class="hbe hbe-button" type="submit">Decrypt</button>
+      <div class="hbe hbe-error" role="alert" aria-live="polite"></div>
+    </form>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.9e70f1e1d2.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css"></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://littlecreeper36.github.io">Little_Creeper</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://littlecreeper36.github.io/2026/08/18/trash/">https://littlecreeper36.github.io/2026/08/18/trash/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://littlecreeper36.github.io" target="_blank">LC的博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E7%A7%98%E5%AF%86/">秘密</a><a class="post-meta__tags" href="/tags/%E5%BD%92%E6%A1%A3/">归档</a></div><div class="post-share"><div class="social-share" data-image="https://cloudflare-imgbed-3j9.pages.dev/file/1787069083050_9EA69955-C20A-4CB2-9D43-BA53B946183D.jpeg" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>赞助</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wx.JPG" target="_blank"><img class="post-qr-code-img" src="/img/wx.JPG" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="/img/zfb.JPG" target="_blank"><img class="post-qr-code-img" src="/img/zfb.JPG" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/2026/07/22/skycotl/" title="记录光遇的入坑心路历程"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">记录光遇的入坑心路历程</div></div><div class="info-2"><div class="info-item-1">入坑其实我一开始对光遇没什么好感，主要是22年PT抖音入侵时期来了一堆纯黑皮纯白毛小马，到处走来走去，骚扰别人，当时我特别反感这些群体，觉得光遇的受众跟在其他游戏里cpdd的人没什么区别。 大概是小王子季的时候闲的没事下载了国服光遇，不过没玩明白，通关了一遍之后就卸载了。 差不多22年表演季的时候才正式入坑国际服，正好遇到海洋日，当时想买乌龟装扮，但是错买成贝壳项链。 我入坑差不多快一年，到缅怀季（国服叫追忆季）的时候才开始买季卡。之前破晓季和欧若拉季的时候本来也想买，但是后面又觉得毕业礼不对我口味就还是没买。 交友后面24年的时候认识了做光遇同人的团长蹦蹦鼠，从此她的光遇团我逢团必跟， </div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/2026/02/21/LC-SFRIENDS/" title="LC的好友回忆录"><img class="cover" src="https://cloudflare-imgbed-3j9.pages.dev/file/1784692903252_logo-background-2c62a39463.png" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-02-21</div><div class="info-item-2">LC的好友回忆录</div></div><div class="info-2"><div class="info-item-1">此文章已加密，需要输入密码才能查看。</div></div></div></a></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/lc-icon.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Little_Creeper</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">3</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://space.bilibili.com/9038761"><i class="fab fa-bilibili"></i><span>哔哩哔哩</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/LittleCreeper36" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="https://discord.gg/rEVM6z4gtb" target="_blank" title="Discord"><i class="fab fa-discord" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:2879702676@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来到LC的博客！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content toc-div-class" style="display:none"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A2%97%E5%9B%BE"><span class="toc-number">1.</span> <span class="toc-text">梗图</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%86%E9%A2%91"><span class="toc-number">2.</span> <span class="toc-text">视频</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B0%BC%E5%8F%A4%E8%B1%AA%E8%B1%AA-mp4"><span class="toc-number">2.1.</span> <span class="toc-text">尼古豪豪.mp4</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%B9%E6%80%A7%E7%88%86%E5%8F%91%E4%BD%86%E6%98%AF%E4%BD%8E%E7%9A%AE%E8%B4%A8%E9%86%87-mp4"><span class="toc-number">2.2.</span> <span class="toc-text">特性爆发但是低皮质醇.mp4</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2026/08/18/trash/" title="乱七八糟的东西"><img src="https://cloudflare-imgbed-3j9.pages.dev/file/1787069083050_9EA69955-C20A-4CB2-9D43-BA53B946183D.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="乱七八糟的东西"/></a><div class="content"><a class="title" href="/2026/08/18/trash/" title="乱七八糟的东西">乱七八糟的东西</a><time datetime="2026-08-18T13:59:57.000Z" title="发表于 2026-08-18 21:59:57">2026-08-18</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/07/22/skycotl/" title="记录光遇的入坑心路历程">记录光遇的入坑心路历程</a><time datetime="2026-07-22T14:30:24.000Z" title="发表于 2026-07-22 22:30:24">2026-07-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/07/22/sticker-book/" title="记第一次开贴纸书团的经历"><img src="https://cloudflare-imgbed-3j9.pages.dev/file/1784728392571_IMG_0184.JPG" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="记第一次开贴纸书团的经历"/></a><div class="content"><a class="title" href="/2026/07/22/sticker-book/" title="记第一次开贴纸书团的经历">记第一次开贴纸书团的经历</a><time datetime="2026-07-22T12:50:42.000Z" title="发表于 2026-07-22 20:50:42">2026-07-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/02/21/LC-SFRIENDS/" title="LC的好友回忆录"><img src="https://cloudflare-imgbed-3j9.pages.dev/file/1784692903252_logo-background-2c62a39463.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="LC的好友回忆录"/></a><div class="content"><a class="title" href="/2026/02/21/LC-SFRIENDS/" title="LC的好友回忆录">LC的好友回忆录</a><time datetime="2026-02-21T15:51:57.000Z" title="发表于 2026-02-21 23:51:57">2026-02-21</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(https://cloudflare-imgbed-3j9.pages.dev/file/1787069083050_9EA69955-C20A-4CB2-9D43-BA53B946183D.jpeg);"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2026 By Little_Creeper</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.6.0</a></span></div><div class="footer_custom_text">我曾窥见天堂一隅</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.6.0"></script><script src="/js/main.js?v=5.6.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1.14/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.js"></script><div class="js-pjax"></div><div class="aplayer no-destroy" data-id="2418762363" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/metingjs/dist/Meting.min.js"></script><script>(() => {
+  const destroyAplayer = () => {
+    if (window.aplayers) {
+      for (let i = 0; i < window.aplayers.length; i++) {
+        if (!window.aplayers[i].options.fixed) {
+          window.aplayers[i].destroy()
+        }
+      }
+    }
+  }
+
+  const runMetingJS = () => {
+    typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+  }
+
+  btf.addGlobalFn('pjaxSend', destroyAplayer, 'destroyAplayer')
+  btf.addGlobalFn('pjaxComplete', loadMeting, 'runMetingJS')
+})()</script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js" defer="defer"></script><script>document.addEventListener('DOMContentLoaded', () => {
+  const pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+  window.pjax = new Pjax({
+    elements: 'a:not([target="_blank"])',
+    selectors: pjaxSelectors,
+    cacheBust: false,
+    analytics: false,
+    scrollRestoration: false
+  })
+
+  const triggerPjaxFn = (val) => {
+    if (!val) return
+    Object.values(val).forEach(fn => {
+      try {
+        fn()
+      } catch (err) {
+        console.debug('Pjax callback failed:', err)
+      }
+    })
+  }
+
+  document.addEventListener('pjax:send', () => {
+    // removeEventListener
+    btf.removeGlobalFnEvent('pjaxSendOnce')
+    btf.removeGlobalFnEvent('themeChange')
+
+    // reset readmode
+    const $bodyClassList = document.body.classList
+    if ($bodyClassList.contains('read-mode')) $bodyClassList.remove('read-mode')
+
+    triggerPjaxFn(window.globalFn.pjaxSend)
+  })
+
+  document.addEventListener('pjax:complete', () => {
+    btf.removeGlobalFnEvent('pjaxCompleteOnce')
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+      if (!item.parentNode) return
+      const newScript = document.createElement('script')
+      const content = item.text || item.textContent || ''
+      Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+      newScript.appendChild(document.createTextNode(content))
+      item.parentNode.replaceChild(newScript, item)
+    })
+
+    triggerPjaxFn(window.globalFn.pjaxComplete)
+  })
+
+  document.addEventListener('pjax:error', e => {
+    const responseURL = e.request && e.request.responseURL
+    if (e.request && e.request.status === 404) {
+      false
+        ? pjax.loadUrl('/404.html')
+        : responseURL && (window.location.href = responseURL)
+    } else if (responseURL) {
+      window.location.href = responseURL
+    }
+  })
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
